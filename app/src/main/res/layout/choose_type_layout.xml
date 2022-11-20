@@ -53,6 +53,15 @@
             android:layout_marginVertical="8dp"
             android:layout_marginHorizontal="16dp"/>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_dark"
+            android:text="Для шумного режима установите громкость на максимум"
+            android:gravity="center"
+            android:layout_marginVertical="8dp"
+            android:layout_marginHorizontal="16dp"/>
+
 
     </LinearLayout>
 
