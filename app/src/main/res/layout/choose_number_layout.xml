@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/numberPickerAnimLayout"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/numberPickerInfoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="32dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="24sp"
+                android:text="Выберите уникальный номер" />
+
+            <TextView
+                android:id="@+id/numberPickerWhatNumber"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="64dp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                android:textSize="24sp"
+                android:text="5" />
+
+                <NumberPicker
+                    android:id="@+id/numberPicker"
+                    android:visibility="visible"
+                    android:layout_gravity="center"
+                    android:layout_width="120dp"
+                    android:layout_height="170dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Номер не должен совпадать с другими прячущимися. Максимум игроков, которые могут прятаться равно 5."
+            android:gravity="center"
+            android:layout_marginVertical="8dp"
+            android:layout_marginHorizontal="16dp"/>
+
+        <Button
+            android:id="@+id/numberPickerNextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="8dp"
+            android:text="Продолжить"/>
+
+        <Button
+            android:id="@+id/numberPickerTryAnother"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="8dp"
+            android:text="Перевыбрать"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
